@@ -171,6 +171,9 @@ linters:
     gosec:
       excludes:
         - G304
+        # Path traversal via taint analysis: the SPIFFE socket path is read
+        # from SPIFFE_ENDPOINT_SOCKET by design (same reasoning as G304).
+        - G703
     nolintlint:
       # Enable to ensure that nolint directives are all used. Default is true.
       allow-unused: false
