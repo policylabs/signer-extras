@@ -3,7 +3,7 @@ module github.com/policylabs/signer-extras
 go 1.26.0
 
 require (
-	github.com/policylabs/signer v0.6.6
+	github.com/policylabs/signer v0.6.7
 	github.com/sigstore/sigstore v1.10.11
 	github.com/spiffe/go-spiffe/v2 v2.9.0
 )
